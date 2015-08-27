@@ -9,8 +9,11 @@
 此时还有一种情况就是当前区间是上一个区间的子集，也就是
 若当前区间的右端点 < 上一个区间的右端点，那么将当前区间右端点 作为 下一次比较的 区间右端点。
 
-#遇到的问题
+# 遇到的问题
 也许是好久没用c写程序，出现了好多低级错误
 条件与 && 写成了 按位与 &
 qsort在g++和gcc中不能使用，只好使用sort，可是sort在c++中std::sort，所以只好加入using namespace std；
+
+# 说明(xmf)
+在GCC中使用 qsort 要包含头文件 <stdlib.h> ，见 http://www.cplusplus.com/reference/cstdlib/qsort/?kw=qsort
 
